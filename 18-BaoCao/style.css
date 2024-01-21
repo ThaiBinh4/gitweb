@@ -1,0 +1,337 @@
+*{
+    margin: 0 auto;
+    padding: auto;
+}
+body{
+    width: 100%;
+    position: relative;
+    min-width: 1300px;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(41, 151, 229);
+    line-height: 50px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    display: flex;
+}
+header a:hover{
+    color: rgb(157, 255, 0);
+    font-size: 30px;
+}
+.header_left {
+    width: 60%;
+}
+.header_left p{
+    color: yellow;
+    font-size: 25px;
+}
+.header_right{
+    width: 50%;
+    
+}
+.header_right li{
+    height: 50px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 25%;
+    font-size: 25px;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s, font-size 0.5s;
+}
+.logo,.b{
+    width: 100%;
+    height: 110px;
+    
+}
+.logo{
+    background-color: white;
+}
+.logo>img{
+    width: 30%;
+    height: 110px;
+    float: left;
+}
+.logo>div{
+    width: 70%;
+    height: 110px;
+    float: right;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.logo>div> p{
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.danhmuc{
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 40px;
+    position: sticky;/* vị trí cố định khi cuộn trang*/
+    top:0px;
+    z-index: 2;
+    background-color: white;
+   
+}
+.find>img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+.danhmucmenu img,.giohang>img{
+    width: 40px;
+    height: 40px;
+}
+.danhmuc>div{
+    height: 60px;
+    float: left;
+}
+.danhmucmenu{
+    width: 30%;
+}
+.danhmucmenu>h2,.find>h2,.giohang>h2{
+    line-height: 45px;
+    margin-right: 10px;
+}
+.danhmucmenu {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .danhmuchienthi {
+    display: none;/* ẩn phần tử ra khỏi giao diện*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #01bdf1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .danhmuchienthi li{
+    list-style: url(./imgb/list.png);
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px;
+    background-color: #00e431;
+    
+  }
+  .danhmuchienthi a{
+    text-decoration: none;
+    color: #001ee4;
+  }
+  .danhmucmenu:hover .danhmuchienthi {
+    display: block;
+  }
+.find{
+    width: 50%;
+}
+.find input{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    
+}
+.find>input:focus{
+    color: rgb(7, 27, 240);
+    font-weight: bold;
+}
+.giohang{
+    width: 15%;
+}
+.danhmuc img, .danhmuc h2,.danhmuc input{
+    float: left;
+}
+.chamngon>img{
+    width: 100%;
+    height: 350px;
+}
+
+.mySlides {display: none;}
+/*img {vertical-align: middle;}*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+/*.fade {
+  animation-name:fade;
+  animation-duration: 30s;
+}*/
+
+
+
+/* On smaller screens, decrease text size */
+ /*@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+} */
+
+
+
+.menu{
+    width: 100%;
+    background-color: rgb(247, 164, 0);
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.menu>img{
+    width: 3%;
+    height: 30px;
+    float: left;
+}
+.menu>div{
+    float: left;
+    width: 15.5%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 3px;
+    margin-right: 3px ;
+    background-color: yellow;
+}
+.menu>div>a{
+    text-decoration: none;
+}
+.menu>div>a:hover{
+    color: red;
+}
+.show{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+.show>img{
+    width: 13%;
+    height: 240px;
+    margin: 5px;
+    transition: all 0.5s;
+}
+.show>img:hover{
+    /* thay đổi tỉ lệ chiều cao */
+    -ms-transform: scaleY(1.5);
+    /* nghiêng theo hướng dọc */
+    transform: skewY(10deg);
+    border-radius: 30px;
+}   
+.slogan{
+    width: 20%;
+    height: 1000px;
+    float: left;
+}
+.slogan>img{
+    width: 100%;
+    height: 100%;
+}
+.goiy{
+    width: 80%;
+    float: right;
+    height: 40px;
+    text-align: center;
+    background-color: #00e431;
+    
+}
+.chinh{
+    width: 80%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.chinh>div{
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.chinh>div>img{
+    width: 100%;
+    height: 300px;
+}
+.chinh span{
+    color:red;
+}
+.chinh>div>h4{
+    background-color: rgb(0, 255, 60);
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.chinh>div>h4:hover{
+    Cursor:pointer;
+
+}
+footer{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+    background-color: rgb(248, 183, 3);
+    display: flex;
+    
+}
+footer>div{
+    width: 50%;
+    height: 80%;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+footer>div>img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+footer>img{
+    width: 40%;
+    height: 250px;
+    float: right;
+}
+footer p{
+    position: relative;
+}
+footer a>img{
+    bottom: 100px;
+    right: 10px;
+    position:fixed;
+    z-index: 2;
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>ĐỖ THÁI BÌNH</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: auto;
+        }
+        body{
+             background-image: url(./img/z.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; 
+            display: flex;
+            position: relative;
+        }
+        body>div{
+            width: 1320px;
+        }
+        
+        header{ grid-area: header;  }
+        .menu{  grid-area: menu; }
+        .left{  grid-area: left; }
+        .center{grid-area: center;}
+        footer{ grid-area: footer;}
+        main{
+            width: 1000px;
+            display: grid;
+            grid-template-areas: 
+            'header header header header header '
+            'menu   menu   menu   menu   menu'
+            'left   center center center center '
+            'footer footer footer footer footer '
+            ;
+            gap: 10px;   
+        }
+        
+        header{
+            width: 1000px;
+            height: 100px;
+        }
+        header>div{
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            float: right;
+            color: aliceblue;
+        }
+        .a1{
+            width: 100px;
+            height: 100px;
+        }
+        .a2{
+            width: 700px;
+            height: 100px;
+            font-size: 100px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .a1{background-image: url(./img/ute.png);  }
+        
+        .menu{
+            width: 100%;
+            height: 50px;
+            background-color:#00b4fc;
+        }
+        .phu{
+            width: 160px;
+            position: fixed;
+            margin-top: 7%;
+        }
+        .phu li{     
+            font-size: 20px;
+            width: 150px;
+            height: 70px;
+            background-color: rgb(29, 227, 49);
+             text-align: center; /*chữ canh giữa */
+            /* line-height: 100px; */
+            text-decoration: none;
+            list-style: none;
+            margin-top:5px ;
+            margin-left: -35px;
+            transition: height 500ms, text-align 500ms, line-height 500ms;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding-top: 25px;
+            
+        }
+        .phu li:hover{
+            height: 80px;
+            text-align: center;
+            background-color: #2c46da;
+        }
+        .phu a{
+            text-decoration: none;
+            color:rgb(11, 35, 27);
+
+        }
+        
+        .left{
+            width: 300px;
+            height: 100%;
+            text-align: center;
+            color: rgb(0, 21, 255);
+            background-color: #e0e093;
+        }
+        .left>img{
+            width: 200px;
+            height: 310px;
+        }
+        .left>div>img{
+            width: 145px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .left p{
+            width: 150px;
+            font-size: 60px;
+            font-family:'Times New Roman', Times, serif;
+          font-weight: bold;
+        }
+        .center{
+            width: 700px;
+            color: rgb(0, 0, 0);
+        }
+        #tt,#đh,#qth,#kn,#st{
+            width: 700px;
+            height: 400px;
+            background-color: #d5da91;
+            padding-left: 50px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        #tt>img,#đh>div{
+            float: left;
+        }
+        #tt>h3{
+            height: 30px;
+        }
+        #đh>div{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        #đh>div>div{
+            width: 190px;
+            height: 100px;
+            text-align: center;
+            background-color: #ff9a0b;
+            color: black;
+            margin: 10px;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            
+        }
+        #qth{
+            height: 500px;
+        }
+        #qth li{
+            font-size: 20px;
+        }
+        #kn{
+            height: 550px;
+        }
+        #st{
+            height: 200px;
+            margin: 0;
+        }
+        #qth>div{
+            width: 550px;
+            height: 50px;
+            background-color: aquamarine;
+            margin: 10px;
+            border-radius: 50px;
+            padding-top: 20px;
+            padding-left: 20px;
+            color: black;
+            font-size: 25px;
+            align-items: center;
+        }
+        .b1,.b2,.b3,.b4,.b5,.b6{
+            width: 400px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: aliceblue;
+            margin-top: 20px;
+        }
+        
+        .b1>div,.b2>div,.b3>div,.b4>div,.b5>div,.b6>div{
+            height: 20px;
+            border-radius: 20px;
+            background-color: red;
+            float:left;
+            margin: 5px;
+            padding-left:5px;
+            box-sizing: border-box;
+        }
+        .b1>div{width: 300px;}
+        .b2>div,.b5>div{width: 340px;}
+        .b3>div{width: 360px;}
+        .b4>div{width: 320px;}
+        .b6>div{width: 260px;}
+        #st>ul>li{
+            font-size: 25px;
+        }
+        footer{
+            width: 1000px;
+            height: 100px;
+            background-color: #dee2c3;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 15px;
+            margin-bottom: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="phu">
+        <ul>
+            <li ><a href="#tt" > THÔNG TIN CÁ NHÂN</a></li>
+            <li><a href="#đh"> ĐỊNH HƯỚNG</a></li>
+            <li><a href="#qth"> QUÁ TRÌNH HỌC</a></li>
+            <li><a href="#kn"> KĨ NĂNG</a> </li>
+            <li><a href="#st"> SỞ THÍCH</a> </li>
+        </ul>
+        
+    </div>
+    <div>
+        <main>
+            <header> 
+                <div class="a1"></div>
+                <div class="a2">INFORMATION </div>
+            </header>
+            <div class="menu">
+                
+            </div>
+            <div class="left">
+
+                <br><br><br><br><br><br>
+             
+                <div><img src="./img/1.jpg" alt=""></div>
+                <h2>ĐỖ THÁI BÌNH</h1>
+                <br><br>
+                <h3>Chuyên ngành công nghệ thông tin</h3>
+                <br>
+                <h3>Trường Đại học Sư Phạm Kĩ Thuật</h3>
+                <h3>- Đại Học Đà Nẵng</h3>
+                <br>
+                <h3>Lớp:22T3</h3>
+                <h3>Lớp trưởng</h3>
+                <br><br><br><br><br><br><br>     
+                <p>
+                    Không gì là không thể đối với một người biết cố gắng
+                </p>
+               
+                
+            </div>
+            <div class="center">
+                <!-- <iframe src="" name="abc" height="900" width="800" title=""></iframe> -->
+                <div id="tt">
+                    <br> <br>
+                    <h2>1. Thông tin cá nhân</h2>
+                    <hr>
+                    <br>
+                    <img src="./img/name.png" alt=""> <h3> :   Đỗ Thái Bình.</h3>
+                    <img src="./img/date.png" alt=""><h3> :   21/11/2004.</h3>
+                    <img src="./img/man.png" alt=""><h3> :   Nam</h3>
+                    <img src="./img/address.png" alt=""> <h3> :   Quảng Ngãi</h3>
+                    <img src="./img/job.png" alt=""><h3>:   Sinh viên năm 1, Trường Đại học Sư Phạm Kĩ Thuật</h3>
+                    <img src="./img/address.png" alt=""><h3>:   02-Thanh Sơn- Thanh Bình- Hải Châu-Đà Nẵng</h3>
+                    <img src="./img/phone.png" alt=""><h3>:   0839976113</h3>
+                    <img src="./img/mail.png" alt=""><h3> :   22115053122304@sv.ute.udn.vn</h3>
+                
+                </div>
+                <div id="đh">
+                    <br> <br>
+                    <h2>2. Định hướng</h2>
+                    <hr><br>
+                    <div>
+                        
+                        <div><p>Phát triển, lập trình Web</p> </div>
+                        <div><p>Tester</p></div>
+                        <div><p>Chuyên viên phát triển ứng dụng</p></div>
+                        <div><p>Kinh doanh</p></div>
+                        <div><p>Robot</p></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div id="qth">
+                    <br>
+                    <h2>3. Quá trình học</h2>
+                    <hr>
+                    <div><p>Trường tiểu học số 2 Hành Phước</p></div>
+                    <div><p>Trường Trung học cơ sở Phạm Văn Đồng</p></div>
+                    <ul>
+                        <li>Đạt giải nhất kì thi khoa học kĩ thuật cấp huyện</li>
+                        <li>Đạt giải nhì môn vật lý cấp huyện</li>
+                    </ul>
+                    <Div><p>Trường Trung học Phổ thông Nguyễn Công Phương</p></Div>
+                    <ul>
+                        <li>Đạt giải khuyến khích cuộc thi về sách cấp tỉnh</li>
+                    </ul>
+                    <div><p>Trường Đại học Sư Phạm Kĩ Thuật-ĐHĐN</p></div>
+                </div>
+                <div id="kn">
+                    <br>
+                    
+                    <h2>4. Kĩ năng</h2>
+                    <hr>
+                    <h2>CSS</h2>
+                    <div class="b1">
+                        <div>75%</div>
+                    </div>
+                    <h2>HTML</h2>
+                    <div class="b2">
+                        <div>85%</div>
+                    </div>
+                    <h2>PASCAL</h2>
+                    <div class="b3">
+                        <div>90%</div>
+                    </div>
+                    <h2>C</h2>
+                    <div class="b4">
+                        <div>80%</div>
+                    </div>
+                    <h2>Tin học văn phòng</h2>
+                    <div class="b5">
+                        <div>85%</div>
+                    </div>
+                    <h2>Tiếng Anh</h2>
+                    <div class="b6">
+                        <div>65%</div>
+                    </div>
+                </div>
+                <div id="st">
+                    <h2>5. Sở thích</h2>
+                    <hr>
+                    <ul>
+                        <li>Xem phim khoa học</li>
+                        <li>Sáng tạo</li>
+                        <li>Đi dạo</li>
+                        <li>Khám phá</li>
+                        <li>Nghe nhạc</li>
+                    </ul>
+                </div>
+            
+            </div>
+            <footer>
+                <p>Bản quyền thuộc về Đỗ Thái Bình-Hãy xin phép trước khi sử dụng</p>
+                <a href="https://www.facebook.com/binh.dothai.9410/" target="_blank"><img src="./img/fb.png" alt=""></a>
+                <h3>Phone: 0839976113</h3>
+                <h3>Email: dothaibinh021218@gmail.com</h3>
+            </footer>
+            
+        </main>
+        
+    </div>
+</body>
+</html>
