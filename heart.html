@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart- animation</title>
+    <style>
+         .center,.left,.right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            height: 100vh; 
+            background-color: rgb(4, 131, 243);
+        }
+        .left{
+            height: 150px;
+            width: 150px;
+            float: left;
+            background-color: aqua;
+            border-radius: 40px 0px;
+        }
+        .right{
+            height: 150px;
+            width: 150px;
+            float: right;
+            background-color: aqua;
+            border-radius: 40px 0px;
+        }
+        .heart{
+            font-size: 20rem;
+            animation: heart 0.5s infinite alternate linear;
+        }
+        .left1,.right1{
+            font-size: 100px;
+            animation: heart 0.2s infinite alternate linear;
+
+        }
+       
+        @keyframes heart{
+            from{
+                transform: scale(0.7);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+        @keyframes left1{
+            from{
+                transform: scale(0.5);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+        @keyframes rigth1{
+            from{
+                transform: scale(0.5);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="left">
+        <div class="left1">🤩</div>
+    </div>
+    <div class="right">
+        <div class="right1">😘</div>
+    </div>
+
+    <div class="center">
+        <div class="heart">😍</div> 
+    </div>
+    
+</body>
+</html>
