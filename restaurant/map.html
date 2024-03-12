@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website Icon" type="png"
+     href="./image/logonhahang.jpg">
+    <title>ThaiBinh_Map_Restaurant</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="tong">
+        <div class="head">
+            <img src="./image/logo.jpg" alt="">
+            <h1>Luxury restaurant</h1>
+            <a href="#"><span>Trang chủ </span></a>
+            <a href="#"><span>Giới thiệu </span></a>
+            <a href="#"><span>Contact </span></a>
+        </div>
+        <div class="slide">
+            <div class="mySlides fade">
+                <img src="./image/slide1.jpg" style="width:1400px">
+            </div>
+            <div class="mySlides fade">
+                <img src="./image/slide2.jpg" style="width:1400px">
+            </div>
+            <div class="mySlides fade">
+                <img src="./image/slide3.jpg" style="width:1400px">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        
+        <div class="chucNang">
+            <a href="http://127.0.0.1:5500/restaurant/index.html"><span>Trang chủ</span></a>
+            <a href="#"><span>Voucher</span></a>
+            <a href="http://127.0.0.1:5500/restaurant/map.html"><span>Map</span></a>
+            <a href="#"><span>Menu</span></a>
+            <a href="#"><span>Tin tức</span></a>
+        </div>
+       
+        <div class="page_left">
+            <img src="./image/pageLeft.jpg" alt="">
+         </div>
+         <div class="map">
+            <h1>Mời quý khách xem sơ đồ và lựa chọn bàn phù hợp</h1>
+            <h3>(Click vào vị trí để xem chi tiết)</h3>
+            <img src="./image/table_map.jpg" alt="Workplace" usemap="#workmap">
+            <map name="workmap">
+                <area shape="poly" coords="45,290,98,224,140,255,92,320" href="#hinhanh101" alt="101">
+                <area shape="poly" coords="124,193,172,136,212,161,168,226" href="#hinhanh102" alt="102">
+                <area shape="rect" coords="220,100,300,148" href="#hinhanh103" alt="103">
+                <area shape="rect" coords="315,100,390,148" href="#hinhanh104" alt="104">
+                <area shape="rect" coords="410,100,485,148" href="#hinhanh105" alt="105">
+                <area shape="poly" coords="508,153,546,124,588,175,551,207" href="#hinhanh106" alt="106">
+                <area shape="poly" coords="580,252,620,225,660,270,625,307" href="#hinhanh107" alt="107">
+                <area shape="poly" coords="247,205,352,205,276,342,145,340" href="#hinhanh166" alt="166">
+                <area shape="poly" coords="352,205,476,207,580,342,447,346" href="#hinhanh199" alt="199">
+
+               
+            </map>
+            <div class="tableInfor">
+                <p><span>Note</span>
+                <br><br>
+                Bàn số:101, 102, 106, 107: tối đa 8 người/bàn
+                <br>
+                Bàn số:103, 104, 105 : tối đa 6 người/bàn
+                
+                <br>
+                Phòng số: 166, 199: tối đa 20 người.(10 người/bàn)</p>
+                 
+                
+            </div>
+        </div>
+         <div class="area_order">
+            <!-- <h3></h3> -->
+            <fieldset>
+                <legend>Đặt bàn tại đây</legend>
+                <div class="form_order">
+                <label for="">Name:</label> <br>
+                <input type="text" placeholder="Your name"> <br>
+                <label for="">Phone Number:</label> <br>
+                <input type="text" placeholder="Your phone number"> <br>
+                <label for="">Address:</label> <br>
+                <textarea cols="30" rows="10"></textarea> <br>
+                <label for="">The number table:</label> <br>
+                <input type="number" placeholder="Your order table"> <br>
+                <label for="">The day arrives:</label> <br>
+                <input type="date"> <br>
+                <label for="">The hour arrives:</label> <br>
+                <input list="time" name="">
+                <datalist id="time">
+                    <option value="8:30-9:30">
+                    <option value="9:45-11:00">
+                    <option value="11:15-12:30">
+                    <option value="13:00-14:15">
+                    <option value="14:30-15:30">
+                    <option value="15:45-17:00">
+                    <option value="17:30-18:45">
+                    <option value="19:00-20:30">
+                    <option value="20:45-22:15">
+                    <option value="22:30-23:45">
+                </datalist> <br> <br> 
+                <button>Confirm</button>
+            </div>
+            </fieldset>
+            
+        </div>
+        <div class="footer">
+    
+            <div>
+                <h1>Hẹn gặp lại quý khách</h1>
+                <h4>Giám đốc: Đỗ Thái Bình</h4>
+            </div>
+            <img src="./image/map.jpg" alt="">
+            <img src="./image/color.jpg" alt="">
+        </div>
+        <div class="hinhanh102" id="hinhanh102" >
+            <video autoplay muted loop id="Video">
+                <source src="./image/videodemo.mp4" >
+            </video>
+            <a href=""><img src="./image/closebutton.png" alt=""></a>
+        </div>
+        <div class="hinhanh101" id="hinhanh101" >
+            <video autoplay muted loop id="Video">
+                <source src="./image/videodemo.mp4" >
+            </video>
+            <a href=""><img src="./image/closebutton.png" alt=""></a>
+        </div>
+        <div class="hinhanh103" id="hinhanh103" >
+            <video autoplay muted loop id="Video">
+                <source src="./image/videodemo.mp4" >
+            </video>
+            <a href=""><img src="./image/closebutton.png" alt=""></a>
+        </div>
+        <div class="hinhanh104" id="hinhanh104" >
+            <video autoplay muted loop id="Video">
+                <source src="./image/videodemo.mp4" >
+            </video>
+            <a href=""><img src="./image/closebutton.png" alt=""></a>
+        </div>
+        <div class="hinhanh105" id="hinhanh105" >
+            <video autoplay muted loop id="Video">
+                <source src="./image/videodemo.mp4" >
+            </video>
+            <a href=""><img src="./image/closebutton.png" alt=""></a>
+        </div>
+        <div class="hinhanh106" id="hinhanh106" >
+            <video autoplay muted loop id="Video">
+                <source src="./image/videodemo.mp4" >
+            </video>
+            <a href=""><img src="./image/closebutton.png" alt=""></a>
+        </div>
+        <div class="hinhanh107" id="hinhanh107" >
+            <video autoplay muted loop id="Video">
+                <source src="./image/videodemo.mp4" >
+            </video>
+            <a href=""><img src="./image/closebutton.png" alt=""></a>
+        </div>
+        <div class="hinhanh166" id="hinhanh166" >
+            <video autoplay muted loop id="Video">
+                <source src="./image/videodemo.mp4" >
+            </video>
+            <a href=""><img src="./image/closebutton.png" alt=""></a>
+        </div>
+        <div class="hinhanh199" id="hinhanh199" >
+            <video autoplay muted loop id="Video">
+                <source src="./image/videodemo.mp4" >
+            </video>
+            <a href=""><img src="./image/closebutton.png" alt=""></a>
+        </div>
+    </div>
+    
+</body>
+<script src="./javascript.js"></script>
+</html>
